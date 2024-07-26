@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Arabica",
+        "categoryId": 1,
+        "price": 10.99,
+        "description": "This is the description for Product 1.",
+        "image": "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721725278/product/fff39qbrh15y3v7jqmzz.png"
+      },
+      {
+        "id": 2,
+        "name": "Liberica",
+        "categoryId": 1,
+        "price": 19.99,
+        "description": "This is the description for Product 2.",
+        "image":"https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721811551/product/t0nsmebmstwwrp7uafpv.png"
+      },
+      {
+        "id": 3,
+        "name": "Robusta",
+        "categoryId": 1,
+        "price": 7.99,
+        "image": "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721811541/product/xrph0l4dijzggnftehga.png",
+        "description": "This is the description for Product 3."
+      },
+      {
+        "id": 4,
+        "name": "Excelsa",
+        "categoryId": 1,
+        "price": 7.99,
+        "image": "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721811526/product/udazvqyckifujywlcmph.png",
+        "description": "This is the description for Product 3."
+      },
+      {
+        "id": 5,
+        "name": "Cirtus",
+        "categoryId": 1,
+        "price": 7.99,
+        "image":  "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721811660/product/mo4efjvs2pguid0kmdiy.png",
+        "description": "This is the description for Product 3."
+      },
+      {
+        "id": 6,
+        "name": "Arabica",
+        "categoryId": 1,
+        "price": 7.99,
+         "image": "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721725278/product/fff39qbrh15y3v7jqmzz.png",
+        "description": "This is the description for Product 3."
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Hot Coffee"
+      },
+      {
+        "id": 2,
+        "name": "Ice Teas"
+      },
+      {
+        "id": 3,
+        "name": "Drinks"
+      },
+      {
+        "id": 4,
+        "name": "Beers"
+      },
+      {
+        "id": 5,
+        "name": "Hot Teas"
+      }
+    
+    ]
+  }
