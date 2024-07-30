@@ -1,5 +1,5 @@
 export const googleFetch = async () => {
-  const apiKey = "AIzaSyC2d-Px5_KyqpOducaBbyJYAE8NLtfemxY";
+  const apiKey = "api key";
   const spreadSheedId = "1eLJge2zZ6payw__pl1FnP5Ig03GnCMD2-odw8LMJaz8";
   const range = "Sheet1!A1:Z100";
 
