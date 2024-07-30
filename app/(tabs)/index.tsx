@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
     gap: 17,
     flexWrap: "wrap",
     flexDirection: "row",
-    marginLeft: 15,
+    justifyContent: "center",
   },
   coffeeImg: {
     width: 115,

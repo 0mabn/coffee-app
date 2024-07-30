@@ -6,9 +6,11 @@ import {
   Text,
   ScrollView,
   Modal,
+  Pressable,
 } from "react-native";
 import { Link } from "expo-router";
 import { useState } from "react";
+import { router } from "expo-router";
 
 export default function AccountScreen() {
   const [showBox, setShowBox] = useState(false);
@@ -23,12 +25,14 @@ export default function AccountScreen() {
           }}
         ></Image>
         <Text style={styles.proText}>Profile</Text>
-        <Image
-          style={styles.bell}
-          source={{
-            uri: "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721727122/product/ar7clpzgqcsitb8veska.png",
-          }}
-        ></Image>
+        <Pressable onPress={() => router.push("../notification")}>
+          <Image
+            style={styles.bell}
+            source={{
+              uri: "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721727122/product/ar7clpzgqcsitb8veska.png",
+            }}
+          ></Image>
+        </Pressable>
       </View>
       <View style={styles.imgAndName}>
         <Image

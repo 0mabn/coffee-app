@@ -7,8 +7,10 @@ import {
   ScrollView,
   TextInput,
   Touchable,
+  Pressable,
 } from "react-native";
 import { Link } from "expo-router";
+import { router } from "expo-router";
 
 export default function FavoritesScreen() {
   return (
@@ -21,12 +23,14 @@ export default function FavoritesScreen() {
           }}
         ></Image>
         <Text style={styles.favText}>Favorites</Text>
-        <Image
-          style={styles.bell}
-          source={{
-            uri: "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721727122/product/ar7clpzgqcsitb8veska.png",
-          }}
-        ></Image>
+        <Pressable onPress={() => router.push("../notification")}>
+          <Image
+            style={styles.bell}
+            source={{
+              uri: "https://res.cloudinary.com/dgqvcwwhr/image/upload/v1721727122/product/ar7clpzgqcsitb8veska.png",
+            }}
+          ></Image>
+        </Pressable>
       </View>
       <View style={styles.searchFav}>
         <TextInput
@@ -154,6 +158,7 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: "#543A20",
     display: "flex",
+    alignItems: "center",
   },
   favText: {
     color: "white",
@@ -172,7 +177,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     height: 45,
-    marginLeft: 20,
     marginTop: 40,
   },
   search: {
@@ -222,8 +226,8 @@ const styles = StyleSheet.create({
     gap: 17,
     flexWrap: "wrap",
     flexDirection: "row",
-    marginLeft: 20,
     marginTop: 30,
+    justifyContent: "center",
   },
   coffeeImg: {
     width: 115,
